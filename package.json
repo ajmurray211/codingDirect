@@ -1,7 +1,7 @@
 {
   "name": "coding_direct",
   "version": "0.1.0",
-  "homepage": "https://github.com/ajmurray211/codingDirect",
+  "homepage": "https://ajmurray211.github.io/codingDirect",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
