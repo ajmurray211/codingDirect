@@ -1,38 +1,69 @@
 .App {
   text-align: center;
+  color: var(--white);
+  background-color: grey;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ########################################################################################################### */
+/* global veriables */
+/* ########################################################################################################### */
+
+:root {
+  /* fonts */
+  --font-1: "Exo 2", sans-serif;
+  --font-2: "Lato", sans-serif;
+  --font-3: "Audiowide", sans-serif;
+
+  /* colors */
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #d9d9d9;
+  --main-bg-1: rgb(0, 13, 31);
+
+  /* sizing */
+  --lineh-t-1: 1.1;
+  --lineh-h-1: 1.4;
+  --letterspace-1: 2;
+  --logosize-1: 12px;
+  --fontsize-t-1: 36px;
+  --fontsize-t-2: 75px;
+  --fontsize-h-1: 34px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* ########################################################################################################### */
+/* Pages */
+/* ########################################################################################################### */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ########################################################################################################### */
+/* Components */
+/* ########################################################################################################### */
+
+/* Navbar*/
+#navContainer {
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.CDlogo {
+  height: var(--logosize-1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navLink {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navLink:hover {
+  color: grey;
+  font-weight: 600;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
 }

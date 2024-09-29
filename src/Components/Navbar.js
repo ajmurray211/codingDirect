@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import logo from '../Assets/logo-1.png'
+import logo from '../Assets/logo-2.png'
 
 const Navbar = () => {
     return (
-        <>
-            <img src={logo}/>
-            <Link to="/">Home</Link>
-            <Link to="/work">Work</Link>
-            <Link to="/pricing">Pricing</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/about">About</Link>
-        </>
+        <div id="navContainer">
+            <img className="CDlogo" src={logo} />
+            <Link className="navLink" to="/">Home</Link>
+            <Link className="navLink" to="/projects">Projects</Link>
+            {/* <Link className="navLink" to="/pricing">Pricing</Link> */}
+            <Link className="navLink" to="/contact">Contact</Link>
+            {/* <Link className="navLink" to="/about">About</Link> */}
+        </div >
     );
 }
 
