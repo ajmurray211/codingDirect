@@ -100,6 +100,7 @@
   width: 90%;
   margin: 0 auto;
   border-radius: 10px;
+  padding: 25px;
 }
 
 #contacttitle2 {
@@ -110,8 +111,15 @@
   text-align: center;
 }
 
-.row {
-  max-width: 45%;
+#contactInputs  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactIcon{
+  width: 50px;
 }
 
 #contactIcons {
@@ -122,10 +130,13 @@
   gap: 15px;
 }
 
-.contactIconContainer {
+#ContactSend{
   background-color: white;
-  width: 4rem;
-  /* border-radius: 35px; */
+  border: 2px solid black;
+  color: black;
+  font-family: var(--font-1);
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* ########################################################################################################### */
@@ -221,7 +232,6 @@
 }
 
 .footerIcon {
-  background-color: white;
   height: 40px;
 }
 
