@@ -6,9 +6,9 @@ import icon2 from '../Assets/tiktokIcon.png'
 import icon3 from '../Assets/facebookIcon.png'
 
 const Contact = () => {
-    const [emailData, setEmailData] = useState()
-    const [success, setSuccess] = useState()
-    const [fail, setFail] = useState()
+    const [emailData, setEmailData] = useState({})
+    const [success, setSuccess] = useState(false)
+    const [fail, setFail] = useState(false)
     const [email, setEmail] = useState()
     const [formErrors, setFormErrors] = useState({});
 
@@ -30,6 +30,17 @@ const Contact = () => {
                 setFail(true)
             });
     }
+    const handleChange = (e) => {
+        setEmailData({
+            ...emailData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        console.log(emailData)
+        setSuccess(true)
+    }
 
     return (
         <div id="contact">
@@ -39,12 +50,21 @@ const Contact = () => {
                     <Row>
                         <Col sm={6}>
                             <FormGroup>
-                                <Input placeholder="First name *" />
+                                <Input
+                                    name="firstName"
+                                    onChange={handleChange}
+                                    placeholder="First name *"
+                                    required
+                                />
                             </FormGroup>
                         </Col>
                         <Col sm={6}>
                             <FormGroup>
-                                <Input placeholder="Last name *" />
+                                <Input
+                                    id="lastName"
+                                    name="lastName"
+                                    onChange={handleChange}
+                                    placeholder="Last name *" />
                             </FormGroup>
                         </Col>
                     </Row>
@@ -52,20 +72,23 @@ const Contact = () => {
                         <Col sm={6}>
                             <FormGroup>
                                 <Input
+                                    onChange={handleChange}
                                     invalid={formErrors.email}
                                     type="email"
                                     name="email"
                                     id="email"
                                     placeholder="Email *"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    defaultValue=''
                                 />
                                 <span className="text-danger">{formErrors.email}</span>
                             </FormGroup>
                         </Col>
                         <Col sm={6}>
                             <FormGroup>
-                                <Input placeholder="Phone number *" />
+                                <Input
+                                    name="phoneNumber"
+                                    onChange={handleChange}
+                                    placeholder="Phone number *" />
                             </FormGroup>
                         </Col>
                     </Row>
@@ -73,12 +96,16 @@ const Contact = () => {
                     <Row>
                         <Col sm={12}>
                             <FormGroup>
-                                <Input type="textarea" placeholder="Message *" />
+                                <Input
+                                    name="message"
+                                    onChange={handleChange}
+                                    type="textarea"
+                                    placeholder="Message *" />
                             </FormGroup>
                         </Col>
                     </Row>
                 </Form>
-                <Button id="ContactSend">Inquire Now</Button>
+                <Button disabled={success}onClick={handleSubmit} id="ContactSend">Inquire Now</Button>
             </div>
 
             <div id="contactFollow">
