@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/codingDirect/static/css/main.52c9f9a7.css",
-    "main.js": "/codingDirect/static/js/main.76ff6c38.js",
+    "main.css": "/codingDirect/static/css/main.0e640a53.css",
+    "main.js": "/codingDirect/static/js/main.d4288943.js",
     "static/js/453.a420d8de.chunk.js": "/codingDirect/static/js/453.a420d8de.chunk.js",
     "static/media/logo-2.png": "/codingDirect/static/media/logo-2.8d0443bd1ebbb005cb0b.png",
     "static/media/hf5.jpg": "/codingDirect/static/media/hf5.70ab3ccbd811b8b48093.jpg",
     "static/media/hf1.jpg": "/codingDirect/static/media/hf1.2fec1c07ab776a9a2ed0.jpg",
     "static/media/lineDecoration.png": "/codingDirect/static/media/lineDecoration.f64e94a267fa7e43692a.png",
     "index.html": "/codingDirect/index.html",
-    "main.52c9f9a7.css.map": "/codingDirect/static/css/main.52c9f9a7.css.map",
-    "main.76ff6c38.js.map": "/codingDirect/static/js/main.76ff6c38.js.map",
+    "main.0e640a53.css.map": "/codingDirect/static/css/main.0e640a53.css.map",
+    "main.d4288943.js.map": "/codingDirect/static/js/main.d4288943.js.map",
     "453.a420d8de.chunk.js.map": "/codingDirect/static/js/453.a420d8de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52c9f9a7.css",
-    "static/js/main.76ff6c38.js"
+    "static/css/main.0e640a53.css",
+    "static/js/main.d4288943.js"
   ]
 }
